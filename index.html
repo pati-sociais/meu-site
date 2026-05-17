@@ -1,112 +1,258 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio | Patrícia</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
 
-<body>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-  <!-- TOPO -->
-  <header class="hero">
+body{
+    font-family:'Cormorant Garamond', serif;
 
-    <!-- FOTO -->
-    <div class="foto">
-      <img src="img/foto.jpg" alt="Foto Patrícia">
-    </div>
+    background:
+    linear-gradient(135deg,#120018,#22002d,#3a0a52);
 
-    <!-- TEXTO -->
-    <div class="texto-header">
-      <h1>Patrícia Paola</h1>
+    color:white;
 
-      <p class="subtitulo">
-        Estudante de Tecnologia • Futura Engenheira de IA
-      </p>
+    min-height:100vh;
+}
 
-      <p class="descricao">
-        Apaixonada por programação, inteligência artificial,
-        inovação e desenvolvimento de projetos tecnológicos.
-      </p>
+/* HERO */
 
-      <a href="https://github.com/pati-sociais"
-         target="_blank"
-         class="botao">
-         Meu GitHub
-      </a>
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
 
-    </div>
+    padding:80px 10%;
 
-  </header>
+    flex-wrap:wrap;
+}
 
-  <!-- SOBRE -->
-  <section class="secao">
-    <h2>Sobre Mim</h2>
+/* FOTO */
 
-    <p>
-      Estou construindo minha carreira na área de tecnologia,
-      desenvolvendo projetos em programação, inteligência artificial,
-      web e automação. Meu objetivo é evoluir constantemente
-      como desenvolvedora e engenheira de IA.
-    </p>
-  </section>
+.foto img{
 
-  <!-- PROJETOS -->
-  <section class="secao">
-    <h2>Projetos</h2>
+    width:260px;
+    height:260px;
 
-    <div class="projetos">
+    object-fit:cover;
 
-      <div class="card">
-        <h3>Monitoramento de Satélites</h3>
+    border-radius:50%;
 
-        <p>
-          Projeto utilizando APIs e Python para visualização
-          e monitoramento de satélites.
-        </p>
-      </div>
+    border:6px solid #ff8de1;
 
-      <div class="card">
-        <h3>Portfólio Web</h3>
+    box-shadow:
+    0 0 20px #ff8de1,
+    0 0 40px #d78cff,
+    0 15px 40px rgba(0,0,0,0.5);
 
-        <p>
-          Desenvolvimento do meu site profissional utilizando
-          HTML, CSS e JavaScript.
-        </p>
-      </div>
+    transition:0.5s;
+}
 
-      <div class="card">
-        <h3>Projetos em IA</h3>
+.foto img:hover{
 
-        <p>
-          Estudos e aplicações envolvendo inteligência artificial
-          e automação.
-        </p>
-      </div>
+    transform:
+    scale(1.05)
+    rotate(2deg);
+}
 
-    </div>
-  </section>
+/* TEXTO */
 
-  <!-- CONTATO -->
-  <section class="secao">
-    <h2>Contato</h2>
+.texto-header{
+    max-width:600px;
+}
 
-    <p>Email: seuemail@email.com</p>
+.texto-header h1{
 
-    <p>
-      GitHub:
-      <a href="https://github.com/pati-sociais"
-         target="_blank">
-         github.com/pati-sociais
-      </a>
-    </p>
-  </section>
+    font-size:4rem;
 
-  <!-- RODAPÉ -->
-  <footer>
-    <p>© 2026 - Patrícia Paola</p>
-  </footer>
+    color:#ffd6ff;
 
-</body>
-</html>
+    text-shadow:
+    0 0 10px #ff9de1,
+    0 0 25px #c77dff;
+
+    margin-bottom:10px;
+}
+
+.subtitulo{
+
+    font-size:1.5rem;
+
+    color:#f4bfff;
+
+    margin-bottom:20px;
+}
+
+.descricao{
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+
+    color:#f8eaff;
+
+    margin-bottom:30px;
+}
+
+/* BOTÃO */
+
+.botao{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    background:
+    linear-gradient(45deg,#ff8de1,#c77dff);
+
+    color:white;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 10px 25px rgba(199,125,255,0.5);
+
+    transition:0.4s;
+}
+
+.botao:hover{
+
+    transform:
+    translateY(-5px)
+    scale(1.05);
+
+    box-shadow:
+    0 15px 35px rgba(255,141,225,0.7);
+}
+
+/* SEÇÕES */
+
+.secao{
+
+    padding:80px 10%;
+}
+
+.secao h2{
+
+    font-size:3rem;
+
+    color:#ffd6ff;
+
+    margin-bottom:30px;
+
+    text-shadow:
+    0 0 10px #ff8de1;
+}
+
+/* PROJETOS */
+
+.projetos{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+/* CARDS */
+
+.card{
+
+    flex:1;
+
+    min-width:280px;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.4);
+
+    transition:0.5s;
+}
+
+.card:hover{
+
+    transform:
+    translateY(-10px)
+    rotate(1deg);
+
+    box-shadow:
+    0 20px 45px rgba(255,141,225,0.4);
+}
+
+.card h3{
+
+    color:#ffc8ff;
+
+    margin-bottom:15px;
+
+    font-size:1.8rem;
+}
+
+.card p{
+
+    color:#f7e8ff;
+
+    font-size:1.1rem;
+}
+
+/* LINKS */
+
+a{
+
+    color:#ffb3ff;
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:40px;
+
+    background:
+    rgba(0,0,0,0.3);
+
+    backdrop-filter:blur(8px);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .hero{
+
+        text-align:center;
+    }
+
+    .texto-header h1{
+
+        font-size:3rem;
+    }
+
+    .foto img{
+
+        width:220px;
+        height:220px;
+    }
+}
