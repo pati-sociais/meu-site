@@ -1,258 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="pt-br">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-    font-family:'Cormorant Garamond', serif;
+    <title>Portfólio | Patrícia Paola</title>
 
-    background:
-    linear-gradient(135deg,#120018,#22002d,#3a0a52);
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    color:white;
+<body>
 
-    min-height:100vh;
-}
+    <!-- HERO -->
 
-/* HERO */
+    <header class="hero">
 
-.hero{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:60px;
+        <!-- FOTO -->
 
-    padding:80px 10%;
+        <div class="foto">
+            <img src="img/foto.jpg" alt="Foto Patrícia">
+        </div>
 
-    flex-wrap:wrap;
-}
+        <!-- TEXTO -->
 
-/* FOTO */
+        <div class="texto-header">
 
-.foto img{
+            <h1>Patrícia Paola</h1>
 
-    width:260px;
-    height:260px;
+            <p class="subtitulo">
+                Estudante de Tecnologia • Futura Engenheira de IA
+            </p>
 
-    object-fit:cover;
+            <p class="descricao">
+                Apaixonada por programação, inteligência artificial,
+                inovação, desenvolvimento web e projetos STEM.
+            </p>
 
-    border-radius:50%;
+            <a href="https://github.com/pati-sociais"
+               target="_blank"
+               class="botao">
 
-    border:6px solid #ff8de1;
+               Meu GitHub
 
-    box-shadow:
-    0 0 20px #ff8de1,
-    0 0 40px #d78cff,
-    0 15px 40px rgba(0,0,0,0.5);
+            </a>
 
-    transition:0.5s;
-}
+        </div>
 
-.foto img:hover{
+    </header>
 
-    transform:
-    scale(1.05)
-    rotate(2deg);
-}
+    <!-- SOBRE -->
 
-/* TEXTO */
+    <section class="secao">
 
-.texto-header{
-    max-width:600px;
-}
+        <h2>Sobre Mim</h2>
 
-.texto-header h1{
+        <p>
+            Estou desenvolvendo projetos voltados para tecnologia,
+            inteligência artificial, programação e desenvolvimento web.
+            Meu objetivo é crescer como desenvolvedora e engenheira de IA.
+        </p>
 
-    font-size:4rem;
+    </section>
 
-    color:#ffd6ff;
+    <!-- PROJETOS -->
 
-    text-shadow:
-    0 0 10px #ff9de1,
-    0 0 25px #c77dff;
+    <section class="secao">
 
-    margin-bottom:10px;
-}
+        <h2>Projetos</h2>
 
-.subtitulo{
+        <div class="projetos">
 
-    font-size:1.5rem;
+            <div class="card">
 
-    color:#f4bfff;
+                <h3>Monitoramento de Satélites</h3>
 
-    margin-bottom:20px;
-}
+                <p>
+                    Projeto utilizando APIs e Python para análise
+                    e monitoramento espacial.
+                </p>
 
-.descricao{
+            </div>
 
-    font-size:1.2rem;
+            <div class="card">
 
-    line-height:1.8;
+                <h3>Portfólio Web</h3>
 
-    color:#f8eaff;
+                <p>
+                    Desenvolvimento de site responsivo utilizando
+                    HTML, CSS e JavaScript.
+                </p>
 
-    margin-bottom:30px;
-}
+            </div>
 
-/* BOTÃO */
+            <div class="card">
 
-.botao{
+                <h3>Projetos em IA</h3>
 
-    display:inline-block;
+                <p>
+                    Estudos e aplicações envolvendo automação,
+                    algoritmos e inteligência artificial.
+                </p>
 
-    padding:14px 30px;
+            </div>
 
-    border-radius:20px;
+        </div>
 
-    text-decoration:none;
+    </section>
 
-    background:
-    linear-gradient(45deg,#ff8de1,#c77dff);
+    <!-- CONTATO -->
 
-    color:white;
+    <section class="secao">
 
-    font-weight:bold;
+        <h2>Contato</h2>
 
-    box-shadow:
-    0 10px 25px rgba(199,125,255,0.5);
+        <p>Email: seuemail@email.com</p>
 
-    transition:0.4s;
-}
+        <p>
+            GitHub:
+            <a href="https://github.com/pati-sociais"
+               target="_blank">
 
-.botao:hover{
+               github.com/pati-sociais
 
-    transform:
-    translateY(-5px)
-    scale(1.05);
+            </a>
+        </p>
 
-    box-shadow:
-    0 15px 35px rgba(255,141,225,0.7);
-}
+    </section>
 
-/* SEÇÕES */
+    <!-- FOOTER -->
 
-.secao{
+    <footer>
 
-    padding:80px 10%;
-}
+        <p>© 2026 - Patrícia Paola</p>
 
-.secao h2{
+    </footer>
 
-    font-size:3rem;
+    <script src="script.js"></script>
 
-    color:#ffd6ff;
-
-    margin-bottom:30px;
-
-    text-shadow:
-    0 0 10px #ff8de1;
-}
-
-/* PROJETOS */
-
-.projetos{
-
-    display:flex;
-
-    gap:30px;
-
-    flex-wrap:wrap;
-}
-
-/* CARDS */
-
-.card{
-
-    flex:1;
-
-    min-width:280px;
-
-    padding:30px;
-
-    border-radius:25px;
-
-    background:
-    rgba(255,255,255,0.08);
-
-    backdrop-filter:blur(10px);
-
-    border:1px solid rgba(255,255,255,0.15);
-
-    box-shadow:
-    0 15px 35px rgba(0,0,0,0.4);
-
-    transition:0.5s;
-}
-
-.card:hover{
-
-    transform:
-    translateY(-10px)
-    rotate(1deg);
-
-    box-shadow:
-    0 20px 45px rgba(255,141,225,0.4);
-}
-
-.card h3{
-
-    color:#ffc8ff;
-
-    margin-bottom:15px;
-
-    font-size:1.8rem;
-}
-
-.card p{
-
-    color:#f7e8ff;
-
-    font-size:1.1rem;
-}
-
-/* LINKS */
-
-a{
-
-    color:#ffb3ff;
-}
-
-/* FOOTER */
-
-footer{
-
-    text-align:center;
-
-    padding:30px;
-
-    margin-top:40px;
-
-    background:
-    rgba(0,0,0,0.3);
-
-    backdrop-filter:blur(8px);
-}
-
-/* RESPONSIVO */
-
-@media(max-width:900px){
-
-    .hero{
-
-        text-align:center;
-    }
-
-    .texto-header h1{
-
-        font-size:3rem;
-    }
-
-    .foto img{
-
-        width:220px;
-        height:220px;
-    }
-}
+</body>
+</html>

@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
 
+/* RESET */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* BODY */
+
 body{
+
     font-family:'Cormorant Garamond', serif;
 
     background:
-    linear-gradient(135deg,#120018,#22002d,#3a0a52);
+    linear-gradient(135deg,#14001f,#2d0140,#4a0d67);
 
     color:white;
 
@@ -20,12 +25,16 @@ body{
 /* HERO */
 
 .hero{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:60px;
 
-    padding:80px 10%;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding:100px 10%;
 
     flex-wrap:wrap;
 }
@@ -34,19 +43,20 @@ body{
 
 .foto img{
 
-    width:260px;
-    height:260px;
+    width:280px;
+
+    height:280px;
 
     object-fit:cover;
 
     border-radius:50%;
 
-    border:6px solid #ff8de1;
+    border:6px solid #ff9de1;
 
     box-shadow:
-    0 0 20px #ff8de1,
-    0 0 40px #d78cff,
-    0 15px 40px rgba(0,0,0,0.5);
+    0 0 25px #ff9de1,
+    0 0 50px #d78cff,
+    0 15px 40px rgba(0,0,0,0.6);
 
     transition:0.5s;
 }
@@ -55,33 +65,34 @@ body{
 
     transform:
     scale(1.05)
-    rotate(2deg);
+    rotate(3deg);
 }
 
 /* TEXTO */
 
 .texto-header{
+
     max-width:600px;
 }
 
 .texto-header h1{
 
-    font-size:4rem;
+    font-size:4.5rem;
 
     color:#ffd6ff;
 
-    text-shadow:
-    0 0 10px #ff9de1,
-    0 0 25px #c77dff;
-
     margin-bottom:10px;
+
+    text-shadow:
+    0 0 15px #ff9de1,
+    0 0 30px #c77dff;
 }
 
 .subtitulo{
 
     font-size:1.5rem;
 
-    color:#f4bfff;
+    color:#ffc8ff;
 
     margin-bottom:20px;
 }
@@ -92,9 +103,9 @@ body{
 
     line-height:1.8;
 
-    color:#f8eaff;
+    color:#f7e8ff;
 
-    margin-bottom:30px;
+    margin-bottom:35px;
 }
 
 /* BOTÃO */
@@ -103,21 +114,23 @@ body{
 
     display:inline-block;
 
-    padding:14px 30px;
+    padding:14px 35px;
 
     border-radius:20px;
-
-    text-decoration:none;
 
     background:
     linear-gradient(45deg,#ff8de1,#c77dff);
 
     color:white;
 
+    text-decoration:none;
+
     font-weight:bold;
 
+    font-size:1.1rem;
+
     box-shadow:
-    0 10px 25px rgba(199,125,255,0.5);
+    0 10px 30px rgba(199,125,255,0.5);
 
     transition:0.4s;
 }
@@ -129,7 +142,7 @@ body{
     scale(1.05);
 
     box-shadow:
-    0 15px 35px rgba(255,141,225,0.7);
+    0 15px 40px rgba(255,141,225,0.7);
 }
 
 /* SEÇÕES */
@@ -148,7 +161,16 @@ body{
     margin-bottom:30px;
 
     text-shadow:
-    0 0 10px #ff8de1;
+    0 0 10px #ff9de1;
+}
+
+.secao p{
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+
+    color:#f7e8ff;
 }
 
 /* PROJETOS */
@@ -170,14 +192,14 @@ body{
 
     min-width:280px;
 
-    padding:30px;
+    padding:35px;
 
     border-radius:25px;
 
     background:
     rgba(255,255,255,0.08);
 
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(12px);
 
     border:1px solid rgba(255,255,255,0.15);
 
@@ -199,16 +221,14 @@ body{
 
 .card h3{
 
+    font-size:1.8rem;
+
     color:#ffc8ff;
 
     margin-bottom:15px;
-
-    font-size:1.8rem;
 }
 
 .card p{
-
-    color:#f7e8ff;
 
     font-size:1.1rem;
 }
@@ -247,12 +267,17 @@ footer{
 
     .texto-header h1{
 
-        font-size:3rem;
+        font-size:3.2rem;
     }
 
     .foto img{
 
         width:220px;
         height:220px;
+    }
+
+    .secao h2{
+
+        font-size:2.4rem;
     }
 }
